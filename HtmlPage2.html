@@ -9,13 +9,16 @@
             var arrayTemp = array.sort(maxCompare);
             var j = arrayTemp.length - 1;
             var i = 0;
-            while (i != j) {
+            while (i < j) {
                 outPut.push(arrayTemp[i]);
                 outPut.push(arrayTemp[j]);
                 i++;
                 j--;
             }
-            outPut.push(arrayTemp[i]);
+            if(outPut.length != array.length)
+            {
+                outPut.push(arrayTemp[i]);
+            }
             return outPut;
         }
 
