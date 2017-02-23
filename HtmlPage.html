@@ -27,7 +27,7 @@
                 var MaxIndex = myInfo.max;
                 var body = document.getElementById('container');
                 body.innerHTML = "";
-                if (MaxIndex != 0) {
+                if (MaxIndex != -1) {
                     body.innerHTML = 'Best in your area : ' +
                         myJSON.FoodComps[MaxIndex].compName + '<hr>';
                 }
